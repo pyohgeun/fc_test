@@ -1,0 +1,32 @@
+@import '../style/style';
+
+.button{
+    border: 0;
+    background-color: $btn-bg-default;
+    min-height: rem(50);
+    font-size: rem(16);
+    border-radius: rem(5);
+    color: $fc-default;
+    &.button-primary{
+        background-color: $btn-bg-primary;
+        color: #ffffff;
+    }
+    &.button-wide{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    &.button-md{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: rem(36);
+        padding-left: rem(16);
+        padding-right: rem(16);
+        font-size: rem(14);
+    }
+    &[disabled="true"]{
+        opacity: .1;
+    }
+}

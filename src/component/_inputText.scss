@@ -1,0 +1,38 @@
+@import '../style/style';
+.input-wrapper{
+    &.on-focus{
+        .input-label{
+            color: $fc-primary;
+        }
+        .input-border{
+            .input-text{
+                background-color: $priamry-light;
+            }
+        }
+    }
+    .input-border{
+        border: 1px solid $bc-input;
+        height: rem(42);
+        border-radius: rem(5);
+        overflow: hidden;
+        .input-text{
+            width: 100%;
+            height: 100%;
+            padding: rem(12) rem(10);
+            vertical-align: middle;
+            background-color: $bg-input;
+            font-size: rem(16);
+            color: $fc-default;
+            &::placeholder{
+                color: $fc-input-placeholder;
+            }
+        }
+    }
+    .input-label{
+        display: block;
+        text-align: left;
+        font-size: rem(12);
+        color: $fc-bluegray50;
+        
+    }
+}
