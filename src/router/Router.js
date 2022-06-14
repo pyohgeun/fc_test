@@ -14,7 +14,7 @@ const FcRouter = () => {
         <div>
             <Router>
                 <Routes>
-                    <Route path="*" element={<Main />}></Route>
+                    <Route path="*" element={<TestLogin />}></Route>
                     <Route exact path="/" element={<TestLogin />}/>
                     <Route path="/main" element={<PrivateRoute isAllowed={isAllowed}><Main /></PrivateRoute>}></Route>
                     <Route path="/addbiz" element={<PrivateRoute isAllowed={isAllowed}><AddBiz /></PrivateRoute>}></Route>

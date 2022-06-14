@@ -26,7 +26,8 @@
         padding-right: rem(16);
         font-size: rem(14);
     }
-    &[disabled="true"]{
-        opacity: .1;
+    &:disabled{
+        opacity: .3;
+        cursor: default;
     }
 }

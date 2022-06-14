@@ -26,6 +26,9 @@
             &::placeholder{
                 color: $fc-input-placeholder;
             }
+            &:focus{
+                outline: none;
+            }
         }
     }
     .input-label{

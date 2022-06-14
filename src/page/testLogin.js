@@ -3,6 +3,7 @@ import './_TestLogin.scss';
 import InputText from '../component/inputText';
 import InputPassword from '../component/inputPassword';
 import $ from 'jquery';
+import Button from '../component/button';
 const TestLogin = () => {
     useEffect(() => {
     });
@@ -17,6 +18,9 @@ const TestLogin = () => {
                 <InputPassword>
                     <label className="input-label mb-6">비밀번호</label>
                 </InputPassword>
+            </div>
+            <div className="mt-50">
+                <Button size="wide" color="primary" disabled="true">로그인</Button>
             </div>
         </div>
     )
